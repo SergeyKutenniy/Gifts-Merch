@@ -66,6 +66,8 @@
         <a href="">ШОППЕРЫ СО СКИДКОЙ - 25%</a>
     </header>
 
+    <!-- ----------------HERO------------------ -->
+
     <section>
         <h1>Свежее дыхание в <br>корпоративной жизни</h1>
         <p>Мы усовершенствовали процесс заказа продукции для того, чтобы Вы и Ваша компания сконцентрировались на
@@ -76,7 +78,7 @@
             <li>
                 <svg width="94" height="109">
                     <use href="./images/symbol-defs.svg#icon-circle"></use>
-                </svg>Высокое качество ONLY
+                </svg>Высокое качество <span lang="en">ONLY</span>
             </li>
             <li>
                 <svg width="94" height="109">
@@ -93,6 +95,262 @@
 
         <img src="./images/hero-girls.webp" alt="" width="785">
     </section>
+
+    <!------------------ MOST POPULAR------------------ -->
+
+    <section>
+        <h2>Самое популярное</h2>
+        <svg width="32" height="31">
+            <use href="./images/symbol-defs.svg#icon-star"></use>
+        </svg>
+        <p>Товары, которые наиболее часто заказывают наши клиенты</p>
+        <a href="#">Все товары
+            <svg width="31" height="8">
+                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+        </a>
+
+        <ul>
+            <li><img src="./images/shopers.jpg" alt="Two shopers, white and black" width="1101"></li>
+            <li><img src="./images/cups.jpg" alt="Two white cups" width="481"></li>
+            <li><img src="./images/thermos.jpg" alt="Blue thermos" width="236"></li>
+            <li><img src="./images/black-t-shirt.jpg" alt="Black t-shirt" width="236"></li>
+        </ul>
+
+        <ul>
+            <li><a href="">Продолжить покупки</a></li>
+            <li><a href="">В корзину</a></li>
+        </ul>
+
+        <svg width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-basket"></use>
+        </svg>
+        <p>375 грн</p>
+    </section>
+
+    <!------------------- CREATIVE----------------- -->
+
+    <section>
+        <h2 lang="en">CREATIVE</h2>
+        <h3>Хотите удивить ваших коллег/партнеров необычными подарками?</h3>
+        <p>Выбирайте готовые подарочные наборы или укажите критерии по которым мы соберем для Вас уникальный бокс.</p>
+
+        <ul>
+            <li><a href="#">Перейти к наборам</a>
+            </li>
+            <li><a href="#">Создать свой</a></li>
+        </ul>
+        <img src="./images/lunch.webp" alt="Creative box" width="696">
+    </section>
+
+    <!-------------------- ON ORDER----------------------- -->
+
+    <section>
+        <h2 class="visually-hidden">On order</h2>
+        <img src="./images/sweater-mockup.jpg" alt="Sweater mockup" width="753">
+        <p>
+            Помимо готовой продукции высокого качества, мы можем для Вас произвести одежду, аксессуры, вкусности и
+            другое под заказ.
+        </p>
+        <p>
+            Благодаря личному производству мы изготавливаем большие партии в короткие сроки, а так же у Вас всегда есть
+            возможность
+            кастомизировать изделия.
+        </p>
+
+        <ul>
+            <li><img src="./images/mockup-1.webp" alt="Mockup pouch, mask" width="136"></li>
+            <li><img src="./images/mockup-2.webp" alt="Mockup thermos" width="130"></li>
+            <li><img src="./images/mockup-3.webp" alt="Mockup dried fruits" width="113"></li>
+            <li><img src="./images/mockup-2.webp" alt="Mockup thermos" width="130"></li>
+        </ul>
+
+        <ul>
+            <li>
+                <button type="button">
+                    <svg width="10" height="20">
+                        <use href="./images/symbol-defs.svg#icon-vector-left"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <svg width="10" height="20">
+                        <use href="./images/symbol-defs.svg#icon-vector-right"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </section>
+
+    <!--------------------- IDEAS----------------------- -->
+
+    <section>
+        <h2 class="visually-hidden">Ideas</h2>
+        <p>У вас своя уникальная идея по разработке мерча?</p>
+        <ul>
+            <li>
+                <svg width="89" height="143">
+                    <use href="./images/symbol-defs.svg#icon-rocket-left"></use>
+                </svg>
+            </li>
+            <li>
+                <svg width="87" height="41">
+                    <use href="./images/symbol-defs.svg#icon-doodle"></use>
+                </svg>
+            </li>
+            <li>
+                <svg width="431" height="421">
+                    <use href="./images/symbol-defs.svg#icon-lamp"></use>
+                </svg>
+            </li>
+            <li>
+                <svg width="126" height="178">
+                    <use href="./images/symbol-defs.svg#icon-rocket-right"></use>
+                </svg>
+            </li>
+        </ul>
+
+        <form>
+            <p>Введите свои контактные данные, и наш менеджер свяжется с Вами в течении 1 часа</p>
+            <label>
+                <input type="text" class="form-input" placeholder="Ваше Имя" name="user-name" minlength="2"
+                    pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы или латиницы." required>
+            </label>
+
+            <label>
+                <input type="mail" class="form-input" placeholder="Ваша електронная почта" name="user-mail" pattern=""
+                    title="" required>
+            </label>
+
+            <label>
+                <input type="tel" class="form-input" placeholder="Ваш номер телефона" name="user-tel"
+                    pattern="[0-9]{10}" title="0501234567" required>
+            </label>
+
+            <button type="submit">Заказать</button>
+        </form>
+    </section>
+
+    <!---------------- COMPANYS WHO COOPERATE WITH US--------------- -->
+
+    <section>
+        <h2 class="">С нами соотрудничают</h2>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="./images/logo-nike.svg" alt="Logo of Nike" width="175">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./images/logo-coca-cola.svg" alt="Logo of Coca-Cola" width="200">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./images/logo-atlas-weekend.svg" alt="Logo of Atlas Weekend" width="141">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./images/logo-megogo.svg" alt="Logo Megogo" width="176">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./images/logo-crazybox.svg" alt="Logo Crazybox" width="255">
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!--------------------- FOOTER---------------------- -->
+
+    <footer>
+        <a href="#" class="logo">
+            <svg class="" width="488" height="39">
+                <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
+        </a>
+        <p>Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание свежее</p>
+        <ul>
+            <li>
+                <a href="tel:+380 630 130 103">+380 630 130 103</a>
+            </li>
+            <li>
+                <a href="mailto:example@gmail.com">example@gmail.com</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="">
+                    <svg width="24" height="24">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg width="24" height="24">
+                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg width="24" height="24">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>Категории</li>
+            <li>
+                <a href="">Пошив</a>
+            </li>
+            <li>
+                <a href="">Все товары</a>
+            </li>
+            <li>
+                <a href="">Наборы</a>
+            </li>
+            <li>
+                <a href="">Производство</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>Информация</li>
+            <li>
+                <a href="">О нас</a>
+            </li>
+            <li>
+                <a href="">ЧаВо</a>
+            </li>
+            <li>
+                <a href="">Контакты</a>
+            </li>
+        </ul>
+
+        <form>
+            <p>Связаться с менеджером</p>
+            <p>Есть вопрос на который не нашли ответ? Оставьте контакт и наш менеджер свяжеться с вами</p>
+            <label>
+                <input type="tel" class="form-input" placeholder="Номер телефона" name="user-tel" pattern="[0-9]{10}"
+                    title="0501234567" required>
+            </label>
+            <button type="submit">
+                <svg width="11" height="11">
+                    <use href="./images/symbol-defs.svg#icon-vector-right"></use>
+                </svg>
+            </button>
+        </form>
+    </footer>
+
 </body>
 
 </html>
