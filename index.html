@@ -14,123 +14,181 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@500&family=Pangolin&family=Roboto&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@500;700&family=Pangolin&family=Roboto&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="shortcut icon" href="./images/favicon.svg">
 </head>
 
 <body>
-    <header class="">
-        <a href="#" class="logo">
-            <svg class="" width="488" height="39">
-                <use href="./images/symbol-defs.svg#icon-logo"></use>
-            </svg>
-        </a>
-
-        <label>
-            <input type="search" name="search" placeholder="Поиск">
-        </label>
-
-        <a href="tel:+380 630 130 103">+380 630 130 103</a>
-
-        <a href="#">
-            <svg class="" width="40" height="40">
-                <use href="./images/symbol-defs.svg#icon-user"></use>
-            </svg>
-        </a>
-
-        <ul>
-            <li>
-                <a href="">
-                    RU
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <a href="#" class="logo">
+                    <svg class="" width="488" height="39">
+                        <use href="./images/symbol-defs.svg#icon-logo"></use>
+                    </svg>
                 </a>
-            </li>
-            <li>
-                <a href="">
-                    ENG
+
+                <label class="header-top__search">
+                    <input type="search" name="search" placeholder="Поиск" class="header-top__search-input">
+                    <svg class="header-top__icon-search" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#icon-search"></use>
+                    </svg>
+                </label>
+
+                <a href="tel:+380 630 130 103" class="header-top__tel">+380 630 130 103</a>
+
+                <a href="#" class="header-top__icon-user">
+                    <svg class="" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-user"></use>
+                    </svg>
                 </a>
-            </li>
-        </ul>
 
-        <nav>
-            <ul>
-                <li>Наборы</li>
-                <li>Все товары</li>
-                <li>Пошив</li>
-                <li>Производство</li>
-                <li>Информация</li>
-            </ul>
-        </nav>
+                <ul class="header-top__lang">
+                    <li>
+                        <a href="">
+                            RU
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="header-top__lang--grey">
+                            /ENG
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-        <a href="">ШОППЕРЫ СО СКИДКОЙ - 25%</a>
+        <div class="header-botton">
+            <div class="container header-botton__main">
+                <nav>
+                    <ul class="header-botton__nav-list">
+                        <li class="header-botton__nav-item">
+                            <a href="" class="header-botton__nav-link">Наборы</a>
+                        </li>
+                        <li class="header-botton__nav-item">
+                            <a href="" class="header-botton__nav-link current">Все товары</a>
+                        </li>
+                        <li class="header-botton__nav-item">
+                            <a href="" class="header-botton__nav-link">Пошив</a>
+                        </li>
+                        <li class="header-botton__nav-item">
+                            <a href="" class="header-botton__nav-link">Производство</a>
+                        </li>
+                        <li class="header-botton__nav-item">
+                            <a href="" class="header-botton__nav-link">Информация</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="" class="header-botton__discount">ШОППЕРЫ СО СКИДКОЙ - 25%</a>
+
+            </div>
+            <img src="./images/header-bugs.webp" alt="Two bugs" class="header-botton__bg-bugs" width="805">
+        </div>
     </header>
 
     <!-- ----------------HERO------------------ -->
 
-    <section>
-        <h1>Свежее дыхание в <br>корпоративной жизни</h1>
-        <p>Мы усовершенствовали процесс заказа продукции для того, чтобы Вы и Ваша компания сконцентрировались на
-            основных задачах
-            и достигали поставленных целей.</p>
+    <section class="hero">
+        <div class="container hero__section">
+            <div class="hero__text-wrapper">
+                <h1 class="hero__title">Свежее дыхание в <br>корпоративной жизни</h1>
+                <p class="hero__description">Мы усовершенствовали процесс заказа продукции для того, чтобы Вы и Ваша
+                    компания сконцентрировались на
+                    основных задачах
+                    и достигали поставленных целей.</p>
 
-        <ul>
-            <li>
-                <svg width="94" height="109">
-                    <use href="./images/symbol-defs.svg#icon-circle"></use>
-                </svg>Высокое качество <span lang="en">ONLY</span>
-            </li>
-            <li>
-                <svg width="94" height="109">
-                    <use href="./images/symbol-defs.svg#icon-circle"></use>
-                </svg>Поддержка менеджера 24/7
-            </li>
-            <li>
-                <svg width="94" height="109">
-                    <use href="./images/symbol-defs.svg#icon-circle"></use>
-                </svg>Выполнение заказа
-                в turbo-режиме
-            </li>
-        </ul>
+                <ul class="quality__list">
+                    <li class="quality__item">
+                        <svg width="94" height="109">
+                            <use href="./images/symbol-defs.svg#icon-circle"></use>
+                        </svg>
+                        <p class="quality__text">Высокое качество ONLY</p>
+                    </li>
+                    <li class="quality__item">
+                        <svg width="94" height="109">
+                            <use href="./images/symbol-defs.svg#icon-circle"></use>
+                        </svg>
+                        <p class="quality__text">Поддержка менеджера 24/7</p>
+                    </li>
+                    <li class="quality__item">
+                        <svg width="94" height="109">
+                            <use href="./images/symbol-defs.svg#icon-circle"></use>
+                        </svg>
+                        <p class="quality__text">Выполнение заказа в TURBO-режиме</p>
+                    </li>
+                </ul>
+            </div>
 
-        <img src="./images/hero-girls.webp" alt="" width="785">
+            <img class="hero__photo" src="./images/hero-girls.webp" alt="Two girls" width="785">
+        </div>
     </section>
 
     <!------------------ MOST POPULAR------------------ -->
 
-    <section>
-        <h2>Самое популярное</h2>
-        <svg width="32" height="31">
-            <use href="./images/symbol-defs.svg#icon-star"></use>
-        </svg>
-        <p>Товары, которые наиболее часто заказывают наши клиенты</p>
-        <a href="#">Все товары
-            <svg width="31" height="8">
-                <use href="./images/symbol-defs.svg#icon-arrow"></use>
-            </svg>
-        </a>
+    <section class="section-popular">
+        <div class="container">
+            <div class="section-popular__caption">
+                <div class="title__wrapper">
+                    <div class="section-popular__title">
+                        <h2>Самое популярное</h2>
+                        <svg class="title__icon-star" width="32" height="31">
+                            <use href="./images/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                    </div>
+                    <p class="section-popular__text">товары, которые наиболее часто заказывают наши клиенты</p>
+                </div>
+                <a href="#">Все товары
+                    <svg class="section-popular__icon-arrow" width="31" height="8">
+                        <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                    </svg>
+                </a>
+            </div>
 
-        <ul>
-            <li><img src="./images/shopers.jpg" alt="Two shopers, white and black" width="1101"></li>
-            <li><img src="./images/cups.jpg" alt="Two white cups" width="481"></li>
-            <li><img src="./images/thermos.jpg" alt="Blue thermos" width="236"></li>
-            <li><img src="./images/black-t-shirt.jpg" alt="Black t-shirt" width="236"></li>
-        </ul>
+            <div class="section-popular__wrapper-1">
+                <img src="./images/shopers.jpg" alt="Two shopers, white and black" width="1101">
 
-        <ul>
-            <li><a href="">Продолжить покупки</a></li>
-            <li><a href="">В корзину</a></li>
-        </ul>
 
-        <svg width="30" height="30">
-            <use href="./images/symbol-defs.svg#icon-basket"></use>
-        </svg>
-        <p>375 грн</p>
+                <div class="section-popular__wrapper-2">
+                    <img src="./images/cups.jpg" alt="Two white cups" width="481">
+                    <div class="section-popular__wrapper-3">
+                        <img src="./images/thermos.jpg" alt="Blue thermos" width="236">
+                        <img src="./images/black-t-shirt.jpg" alt="Black t-shirt" width="236">
+                    </div>
+
+                    <div class="section-popular__basket">
+                        <div class="basket__text">
+                            <a href="">Продолжить покупки</a>
+                            <a href="" class="basket__link">В корзину</a>
+                            <button class="basket__close" type="button">
+                                <svg class="basket__icon-close" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+
+                        <div class="basket__price">
+                            <div class="basket__icon">
+                                <div class="basket__bg">
+                                    <svg class="basket__icon-basket" width="30" height="30">
+                                        <use href="./images/symbol-defs.svg#icon-basket"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="price__text">375 грн</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!------------------- CREATIVE----------------- -->
+    <!------------------ CREATIVE---------------- -->
 
-    <section>
+    <section class="">
         <h2 lang="en">CREATIVE</h2>
         <h3>Хотите удивить ваших коллег/партнеров необычными подарками?</h3>
         <p>Выбирайте готовые подарочные наборы или укажите критерии по которым мы соберем для Вас уникальный бокс.</p>

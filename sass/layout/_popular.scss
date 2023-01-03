@@ -1,0 +1,145 @@
+.section-popular {
+  background-color: #eef1f6;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 42px;
+  padding-bottom: 130px;
+}
+
+.section-popular__title {
+  display: flex;
+}
+
+.title__icon-star {
+  margin-left: 28px;
+}
+
+.section-popular__caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-popular__text {
+  margin-top: 1px;
+  line-height: 1.3;
+  letter-spacing: 0.065em;
+  text-transform: lowercase;
+  color: var(--secondary-text-color);
+}
+
+.section-popular__icon-arrow {
+  margin-left: 20px;
+}
+
+.section-popular__wrapper-1 {
+  display: flex;
+  margin-top: 30px;
+}
+
+.section-popular__wrapper-2 {
+  position: relative;
+  margin-left: 17px;
+}
+
+.section-popular__wrapper-3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.section-popular img {
+  border-radius: 15px;
+}
+
+.section-popular__basket {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.basket__text {
+  position: relative;
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.06;
+  text-decoration-line: underline;
+  padding: 28px 18px;
+  background: #fafafa;
+  box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1),
+    0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
+  border-radius: 16px;
+}
+
+.basket__link {
+  margin-left: 20px;
+  color: var(--secondary-accent-color);
+}
+
+.basket__close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -7px;
+  right: -5px;
+  border: none;
+  background-color: transparent;
+}
+
+.basket__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 99px;
+  height: 99px;
+}
+
+.basket__icon {
+  background: rgba(31, 171, 138, 0.36);
+  border-radius: 50%;
+}
+
+.basket__bg {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: #1fab8a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:after {
+    content: '3';
+    width: 19px;
+    height: 19px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+
+.basket__price {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price__text {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.06;
+  color: #000000;
+  margin-top: 6px;
+}
