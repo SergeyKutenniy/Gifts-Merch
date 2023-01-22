@@ -2,6 +2,8 @@
   max-width: 1920px;
   background-image: var(--accent-bg-color);
   margin: 0 auto;
+  background-size: 1920px 860px;
+  background-repeat: no-repeat;
 }
 
 .hero__section {
@@ -39,6 +41,29 @@
   &:first-child {
     margin-left: 0px;
   }
+
+  &:nth-child(2) .quality__icon {
+    animation-delay: 2000ms;
+  }
+
+  &:nth-child(3) .quality__icon {
+    animation-delay: 4000ms;
+  }
+}
+
+.quality__icon {
+  animation: qualityRotate 15000ms linear infinite 250ms;
+}
+
+@keyframes qualityRotate {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 45% 45%;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 45% 45%;
+  }
 }
 
 .quality__text {
@@ -51,4 +76,6 @@
 
 .hero__photo {
   margin-left: 40px;
+  position: relative;
+  bottom: -25px;
 }

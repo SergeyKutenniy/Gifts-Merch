@@ -2,15 +2,24 @@
 @import './utils/fonts';
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/display-flex';
 
 // BASE
 @import './base/common';
 
 // COMPONENTS
 @import './components/container';
+@import './components/btn';
+@import './components/form';
+@import './components/slider-btn';
 
 // LAYOUT
 @import './layout/header-top';
 @import './layout/header-bottom';
 @import './layout/hero';
 @import './layout/popular';
+@import './layout/creative';
+@import './layout/order';
+@import './layout/ideas';
+@import './layout/cooperate';
+@import './layout/footer';

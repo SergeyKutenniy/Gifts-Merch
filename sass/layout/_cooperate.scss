@@ -1,0 +1,38 @@
+.cooperate {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 103px;
+  padding-bottom: 132px;
+}
+
+.cooperate__title {
+  margin-bottom: 72px;
+}
+
+.cooperate__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cooperate__item {
+  margin-left: 120px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.cooperate__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__btn--left {
+  margin-right: 45px;
+}
+
+.slider__btn--right {
+  margin-left: 45px;
+}

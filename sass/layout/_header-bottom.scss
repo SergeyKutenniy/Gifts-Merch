@@ -21,7 +21,7 @@
 
 .header-botton__nav-item {
   position: relative;
-  margin-left: 80px;
+  margin-left: 70px;
 
   &:first-child {
     margin-left: 0;
@@ -37,8 +37,8 @@
 
 .current {
   color: white;
-  padding-left: 44px;
-  padding-right: 44px;
+  padding-left: 40px;
+  padding-right: 40px;
   height: 100%;
   background: #272525;
   box-shadow: 0px 16.0566px 20.0707px -4.01414px rgba(26, 32, 44, 0.1),
@@ -53,7 +53,7 @@
     background: #272525;
     border-radius: 6px;
     position: absolute;
-    bottom: -10px;
+    bottom: -18px;
     left: 0;
   }
 }
@@ -61,7 +61,7 @@
 .header-botton__discount {
   font-family: 'Montserrat';
   font-weight: 700;
-  font-size: 47px;
+  font-size: 48px;
   line-height: 1.23;
   text-transform: lowercase;
   color: var(--main-accent-color);

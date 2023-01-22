@@ -1,0 +1,79 @@
+.ideas {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 155px;
+  padding-bottom: 102px;
+  background-image: url(/images/ideas-bg.png);
+  background-position: center;
+  background-size: 1920px 730px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.ideas-container {
+  position: relative;
+}
+
+.ideas__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  width: 556px;
+}
+
+.ideas__after-title {
+  margin-top: 17px;
+  width: 556px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.065em;
+}
+
+.ideas__icons {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: -136px;
+}
+
+.first-rocket {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 120px;
+}
+
+.icon-lamp {
+  margin-right: 94px;
+}
+
+.form__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.21;
+  margin-top: 93px;
+  width: 556px;
+  margin-bottom: 27px;
+}
+
+.form__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+// .input-wrapper {
+//   background-size: 100% 100%;
+//   background-color: black;
+// }
+
+.ideas:hover .rocket--left {
+  transform: translateY(-400px) translateX(-200px);
+  transition: transform 60000ms linear;
+}
+
+.ideas:hover .rocket--right {
+  transform: translateY(-400px) translateX(200px);
+  transition: transform 100000ms linear;
+}
