@@ -1,4 +1,4 @@
-.section-popular {
+.popular {
   max-width: 1920px;
   margin: 0 auto;
   padding-top: 42px;
@@ -11,19 +11,25 @@
   z-index: 2;
 }
 
-.section-popular__title {
+.popular__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular__title {
   display: flex;
   position: relative;
 }
 
-.title__icon-star--main {
+.popular__icon-star {
   margin-left: 28px;
   position: absolute;
   right: 80px;
   top: 0;
 }
 
-.title__icon-star {
+.popular__icon-star--puls {
   margin-left: 28px;
   animation: puls 1000ms linear infinite;
 }
@@ -39,13 +45,7 @@
   }
 }
 
-.section-popular__caption {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.section-popular__text {
+.popular__text {
   margin-top: 1px;
   line-height: 1.3;
   letter-spacing: 0.065em;
@@ -53,31 +53,39 @@
   color: var(--secondary-text-color);
 }
 
-.section-popular__icon-arrow {
+.popular__products {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.065em;
+}
+
+.popular__icon-arrow {
   margin-left: 20px;
 }
 
-.section-popular__wrapper-1 {
+.popular__grid {
   display: flex;
   margin-top: 30px;
 }
 
-.section-popular__wrapper-2 {
+.popular__grid-2 {
   position: relative;
   margin-left: 17px;
 }
 
-.section-popular__wrapper-3 {
+.popular__grid-3 {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
 }
 
-.section-popular img {
+.popular img {
   border-radius: 15px;
 }
 
-.section-popular__basket {
+.basket {
   position: absolute;
   top: -35px;
   right: 0;
@@ -88,6 +96,7 @@
 .basket__text {
   position: relative;
   display: inline-flex;
+  top: -14px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.06;
@@ -97,6 +106,7 @@
   box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1),
     0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
   border-radius: 16px;
+  margin-right: 24px;
 }
 
 .basket__link {
@@ -104,7 +114,7 @@
   color: var(--secondary-accent-color);
 }
 
-.basket__close {
+.button__close {
   position: absolute;
   display: flex;
   align-items: center;
@@ -115,15 +125,12 @@
   background-color: transparent;
 }
 
-.basket__icon {
+.basket__figure {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 99px;
   height: 99px;
-}
-
-.basket__icon {
   background: rgba(31, 171, 138, 0.36);
   border-radius: 50%;
 }
@@ -154,17 +161,11 @@
 }
 
 .basket__price {
-  margin-left: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.price__text {
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 17px;
   line-height: 1.06;
   color: #000000;
   margin-top: 6px;
+  text-align: center;
 }
