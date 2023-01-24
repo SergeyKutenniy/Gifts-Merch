@@ -15,12 +15,12 @@
   display: flex;
 }
 
-.header-top__search {
+.search {
   margin-left: 64px;
   position: relative;
 }
 
-.header-top__search-input {
+.search__input {
   width: 491px;
   border: 2px solid var(--main-text-color);
   border-radius: 90px;
@@ -36,7 +36,7 @@
   }
 }
 
-.header-top__icon-search {
+.search__icon {
   display: block;
   position: absolute;
   top: 50%;
@@ -82,7 +82,7 @@
   }
 }
 
-.header-top__lang {
+.lang {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -90,7 +90,7 @@
   margin-left: auto;
 }
 
-.header-top__lang--grey {
+.lang--noactive {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.06;

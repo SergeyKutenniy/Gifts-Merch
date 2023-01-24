@@ -1,16 +1,16 @@
-.header-botton__main {
+.header-botton {
   display: flex;
   align-items: center;
   position: inherit;
   z-index: 1;
 }
 
-.header-botton {
+.header-botton--bg {
   background-color: rgba(250, 251, 253, 0.44);
   position: relative;
 }
 
-.header-botton__nav-list {
+.nav {
   display: flex;
   align-items: center;
 
@@ -19,7 +19,7 @@
   line-height: 1.06;
 }
 
-.header-botton__nav-item {
+.nav__item {
   position: relative;
   margin-left: 70px;
 
@@ -28,7 +28,7 @@
   }
 }
 
-.header-botton__nav-link {
+.nav__link {
   display: block;
   padding-top: 41px;
   padding-bottom: 40px;
@@ -58,7 +58,7 @@
   }
 }
 
-.header-botton__discount {
+.discount {
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 48px;
@@ -68,7 +68,7 @@
   margin-left: 50px;
 }
 
-.header-botton__bg-bugs {
+.bg-bugs {
   position: absolute;
   top: 0;
   right: 0;

@@ -25,14 +25,14 @@
         <div class="container">
             <div class="header-top">
                 <a href="#" class="logo">
-                    <svg class="" width="488" height="39">
+                    <svg class="logo__icon" width="488" height="39">
                         <use href="./images/symbol-defs.svg#icon-logo"></use>
                     </svg>
                 </a>
 
-                <label class="header-top__search">
-                    <input type="search" name="search" placeholder="Поиск" class="header-top__search-input">
-                    <svg class="header-top__icon-search" width="24" height="24">
+                <label class="search">
+                    <input class="search__input" type="search" name="search" placeholder="Поиск" autocomplete="off">
+                    <svg class="search__icon" width="24" height="24">
                         <use href="./images/symbol-defs.svg#icon-search"></use>
                     </svg>
                 </label>
@@ -45,14 +45,14 @@
                     </svg>
                 </a>
 
-                <ul class="header-top__lang">
-                    <li>
+                <ul class="lang">
+                    <li class="lang__item">
                         <a href="">
                             RU
                         </a>
                     </li>
-                    <li>
-                        <a href="" class="header-top__lang--grey">
+                    <li class="lang__item">
+                        <a href="" class="lang--noactive">
                             /ENG
                         </a>
                     </li>
@@ -60,48 +60,48 @@
             </div>
         </div>
 
-        <div class="header-botton">
-            <div class="container header-botton__main">
+        <div class="header-botton--bg">
+            <div class="container header-botton">
                 <nav>
-                    <ul class="header-botton__nav-list">
-                        <li class="header-botton__nav-item">
-                            <a href="" class="header-botton__nav-link">Наборы</a>
+                    <ul class="nav">
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Наборы</a>
                         </li>
-                        <li class="header-botton__nav-item">
-                            <a href="" class="header-botton__nav-link current">Все товары</a>
+                        <li class="nav__item">
+                            <a href="" class="nav__link current">Все товары</a>
                         </li>
-                        <li class="header-botton__nav-item">
-                            <a href="" class="header-botton__nav-link">Пошив</a>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Пошив</a>
                         </li>
-                        <li class="header-botton__nav-item">
-                            <a href="" class="header-botton__nav-link">Производство</a>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Производство</a>
                         </li>
-                        <li class="header-botton__nav-item">
-                            <a href="" class="header-botton__nav-link">Информация</a>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Информация</a>
                         </li>
                     </ul>
                 </nav>
 
-                <a href="" class="header-botton__discount">ШОППЕРЫ СО СКИДКОЙ - 25%</a>
+                <a href="" class="discount">ШОППЕРЫ СО СКИДКОЙ - 25%</a>
 
             </div>
-            <img src="./images/header-bugs.webp" alt="Two bugs" class="header-botton__bg-bugs" width="805">
+            <img src="./images/header-bugs.webp" alt="Two bugs" class="bg-bugs" width="805">
         </div>
     </header>
 
     <!-- ----------------HERO------------------ -->
 
-    <div class="hero">
-        <section class="hero">
-            <div class="container hero__section">
-                <div class="hero__text-wrapper">
+    <div class="overlay">
+        <div class="container">
+            <section class="hero">
+                <div>
                     <h1 class="hero__title">Свежее дыхание в <br>корпоративной жизни</h1>
                     <p class="hero__description">Мы усовершенствовали процесс заказа продукции для того, чтобы Вы и Ваша
                         компания сконцентрировались на
                         основных задачах
                         и достигали поставленных целей.</p>
 
-                    <ul class="quality__list">
+                    <ul class="quality">
                         <li class="quality__item">
                             <svg width="109" height="94" class="quality__icon">
                                 <use href="./images/symbol-defs.svg#icon-circle"></use>
@@ -124,8 +124,8 @@
                 </div>
 
                 <img class="hero__photo" src="./images/hero-girls.webp" alt="Two girls" width="785">
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!------------------ MOST POPULAR------------------ -->
 
