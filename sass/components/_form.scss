@@ -1,8 +1,27 @@
-.form-field {
-  position: relative;
+.form__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.21;
+  margin-top: 93px;
+  width: 556px;
+  margin-bottom: 27px;
 }
 
-.form-label {
+.form__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.form__field {
+  position: relative;
+  margin-left: 74px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.form__label {
   position: absolute;
   top: 50%;
   left: 30px;
@@ -11,15 +30,15 @@
   transition: transform 250ms ease;
 }
 
-.form-icon {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 7px;
   transform: translateY(-50%);
 }
 
-.form__input:focus-within + .form-label,
-.form__input:not(:placeholder-shown) + .form-label {
+.form__input:focus-within + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
   transform: translateY(-30px) translateX(-20px);
 }
 
@@ -51,14 +70,6 @@
 
 .form__input:focus-within:not(:placeholder-shown):invalid ~ .form-icon {
   fill: rgb(255, 119, 119);
-}
-
-.form-field {
-  margin-left: 74px;
-
-  &:first-child {
-    margin-left: 0;
-  }
 }
 
 .form__btn {

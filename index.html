@@ -195,34 +195,34 @@
 
     <section class="creative">
         <div class="container">
-            <div class="wrapper">
-                <div>
-                    <h2 class="creative__title" lang="en">
-                        <span class="creative__title--color">C</span>
-                        <span class="creative__title--color">R</span>
-                        <span class="creative__title--color">E</span>
-                        <span class="creative__title--color">A</span>
-                        <span class="creative__title--color">T</span>
-                        <span class="creative__title--color">I</span>
-                        <span class="creative__title--color">V</span>
-                        <span class="creative__title--color">E</span>
-                    </h2>
-                    <h3 class="creative__after-title">Хотите удивить ваших коллег/партнеров <br>необычными подарками?
-                    </h3>
-                    <p class="creative__text">Выбирайте готовые подарочные наборы или укажите критерии по которым мы
-                        соберем
-                        для
-                        Вас уникальный бокс.
-                    </p>
+            <h2 class="creative__title" lang="en">
+                <span class="creative__title--color">C</span>
+                <span class="creative__title--color">R</span>
+                <span class="creative__title--color">E</span>
+                <span class="creative__title--color">A</span>
+                <span class="creative__title--color">T</span>
+                <span class="creative__title--color">I</span>
+                <span class="creative__title--color">V</span>
+                <span class="creative__title--color">E</span>
+            </h2>
+            <h3 class="creative__after-title">Хотите удивить ваших коллег/партнеров <br>необычными подарками?
+            </h3>
+            <p class="creative__text">Выбирайте готовые подарочные наборы или укажите критерии по которым мы
+                соберем
+                для
+                Вас уникальный бокс.
+            </p>
 
-                    <ul class="creative__list">
-                        <li><a class="btn btn--dark" href="#">Перейти к наборам</a>
-                        </li>
-                        <li><a class="btn btn--light" href="#">Создать свой</a></li>
-                    </ul>
-                </div>
-                <img class="creative__photo" src="./images/lunch.webp" alt="Creative box" width="696">
-            </div>
+            <ul class="creative__list">
+                <li>
+                    <a class="btn btn--dark" href="#">Перейти к наборам</a>
+                </li>
+                <li>
+                    <a class="btn btn--light" href="#">Создать свой</a>
+                </li>
+            </ul>
+
+            <img class="creative__photo" src="./images/lunch.webp" alt="Creative box" width="696">
         </div>
     </section>
 
@@ -231,14 +231,12 @@
     <section class="order">
         <div class="container">
             <h2 class="visually-hidden">On order</h2>
-            <div class="section-order">
-                <img src="./images/sweater-mockup.jpg" alt="Sweater mockup" width="753" class="order__img">
+            <div class="wrapper">
+                <img src="./images/sweater-mockup.jpg" alt="Sweater mockup" width="753">
                 <div class="order__descr">
-                    <p class="order__after-title">
+                    <p class="order__header">
                         Помимо готовой продукции высокого качества, мы можем для Вас произвести одежду, аксессуры,
-                        вкусности
-                        и
-                        другое под заказ.
+                        вкусности и другое под заказ.
                     </p>
                     <p class="order__text">
                         Благодаря личному производству мы изготавливаем большие партии в короткие сроки, а так же у Вас
@@ -248,34 +246,36 @@
                         кастомизировать изделия.
                     </p>
 
-                    <div class="d-flex order__list">
-                        <ul class="d-flex order__examples">
-                            <li class="order__item"><img src="./images/mockup-1.webp" alt="Mockup pouch, mask"
-                                    width="135"></li>
-                            <li class="order__item"><img src="./images/mockup-2.webp" alt="Mockup thermos" width="130">
+                    <div class="order__list">
+                        <ul class="order__examples">
+                            <li class="order__item">
+                                <img src="./images/mockup-1.webp" alt="Mockup pouch, mask" width="135">
                             </li>
-                            <li class="order__item"><img src="./images/mockup-3.webp" alt="Mockup dried fruits"
-                                    width="113"></li>
-                            <li class="order__item"><img src="./images/mockup-2.webp" alt="Mockup thermos" width="130">
+                            <li class="order__item">
+                                <img src="./images/mockup-2.webp" alt="Mockup thermos" width="130">
+                            </li>
+                            <li class="order__item">
+                                <img src="./images/mockup-3.webp" alt="Mockup dried fruits" width="113">
+                            </li>
+                            <li class="order__item">
+                                <img src="./images/mockup-2.webp" alt="Mockup thermos" width="130">
                             </li>
                         </ul>
 
-                        <div class="d-flex order__arrow">
-                            <div class="examples__btn">
-                                <button type="button" class="arrow-btn">
-                                    <svg width="10" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-vector-left"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <p class="arrow__number">1/7</p>
-                            <div class="examples__btn">
-                                <button type="button" class="arrow-btn">
-                                    <svg width="10" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-vector-right"></use>
-                                    </svg>
-                                </button>
-                            </div>
+                        <div class="order__slider">
+                            <button type="button" class="order__btn">
+                                <svg width="10" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-vector-left"></use>
+                                </svg>
+                            </button>
+
+                            <p class="order__number">1/7</p>
+
+                            <button type="button" class="order__btn">
+                                <svg width="10" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-vector-right"></use>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -287,74 +287,68 @@
 
     <section class="ideas">
         <div class="container">
-            <div class="ideas-container">
-                <h2 class="visually-hidden">Ideas</h2>
-                <p class="ideas__title">У вас своя уникальная идея по разработке мерча?</p>
-                <p class="ideas__after-title">Изготовим мерч по вашему дизайну. Расскажем лайфхаки и ознакомим с
-                    технологией
-                    производства, предоставим
-                    образцы
-                    матералов.</p>
-                <div class="ideas__icons">
+            <h2 class="visually-hidden">Ideas</h2>
+            <p class="ideas__title">У вас своя уникальная идея по разработке мерча?</p>
+            <p class="ideas__after-title">Изготовим мерч по вашему дизайну. Расскажем лайфхаки и ознакомим с технологией
+                производства, предоставим образцы матералов.</p>
+            <div class="ideas__picture">
 
-                    <div class="first-rocket">
-                        <svg class="rocket rocket--left" width="89" height="143">
-                            <use href="./images/symbol-defs.svg#icon-rocket-left"></use>
-                        </svg>
-
-                        <svg width="87" height="41">
-                            <use href="./images/symbol-defs.svg#icon-doodle"></use>
-                        </svg>
-                    </div>
-
-
-                    <svg class="icon-lamp" width="431" height="421">
-                        <use href="./images/symbol-defs.svg#icon-lamp"></use>
+                <div class="rocket">
+                    <svg class="rocket--left" width="89" height="143">
+                        <use href="./images/symbol-defs.svg#icon-rocket-left"></use>
                     </svg>
 
-
-                    <svg class="rocket rocket--right" width="126" height="178">
-                        <use href="./images/symbol-defs.svg#icon-rocket-right"></use>
+                    <svg width="87" height="41">
+                        <use href="./images/symbol-defs.svg#icon-doodle"></use>
                     </svg>
-
                 </div>
 
-                <form class="js-speaker-form" name="ideas__contact-form" autocomplete="off">
-                    <p class="form__title">Введите свои контактные данные, и наш менеджер свяжется с Вами в течении 1
-                        часа</p>
-                    <div class="form__wrapper">
-                        <label class="form-field">
-                            <input type="text" class="form__input" placeholder=" " name="user-name" minlength="2"
-                                pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы или латиницы."
-                                required>
-                            <span class="form-label">Ваше имя</span>
-                            <svg class="form-icon" width="16" height="16">
-                                <use href="./images/symbol-defs.svg#icon-name"></use>
-                            </svg>
-                        </label>
+                <svg class="icon-lamp" width="431" height="421">
+                    <use href="./images/symbol-defs.svg#icon-lamp"></use>
+                </svg>
 
-                        <label class="form-field">
-                            <input type="email" class="form__input" placeholder=" " name="user-mail"
-                                title="example@mail.com" required>
-                            <span class="form-label">Ваша електронная почта</span>
-                            <svg class="form-icon" width="16" height="16">
-                                <use href="./images/symbol-defs.svg#icon-mail"></use>
-                            </svg>
-                        </label>
+                <svg class="rocket--right" width="126" height="178">
+                    <use href="./images/symbol-defs.svg#icon-rocket-right"></use>
+                </svg>
 
-                        <label class="form-field">
-                            <input type="text" class="form__input" placeholder=" " name="user-tel" minlength="2"
-                                pattern="[0-9]{10}" title="0501234567" required>
-                            <span class="form-label">Ваш номер телефона</span>
-                            <svg class="form-icon" width="16" height="16">
-                                <use href="./images/symbol-defs.svg#icon-tel"></use>
-                            </svg>
-                        </label>
-
-                        <button type="submit" class="btn form__btn">Заказать</button>
-                    </div>
-                </form>
             </div>
+
+            <form class="js-speaker-form" name="contact-form" autocomplete="off">
+                <p class="form__title">Введите свои контактные данные, и наш менеджер свяжется с Вами в течении 1 часа
+                </p>
+                <div class="form__wrapper">
+                    <label class="form__field">
+                        <input type="text" class="form__input" placeholder=" " name="user-name" minlength="2"
+                            pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы или латиницы."
+                            required>
+                        <span class="form__label">Ваше имя</span>
+                        <svg class="form__icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-name"></use>
+                        </svg>
+                    </label>
+
+                    <label class="form__field">
+                        <input type="email" class="form__input" placeholder=" " name="user-mail"
+                            title="example@mail.com" required>
+                        <span class="form__label">Ваша електронная почта</span>
+                        <svg class="form__icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                    </label>
+
+                    <label class="form__field">
+                        <input type="tel" class="form__input" placeholder=" " name="user-tel" pattern="[0-9]{10}"
+                            title="0501234567" required>
+                        <span class="form__label">Ваш номер телефона</span>
+                        <svg class="form__icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-tel"></use>
+                        </svg>
+                    </label>
+
+                    <button type="submit" class="btn form__btn">Заказать</button>
+                </div>
+            </form>
+
         </div>
     </section>
 
@@ -364,7 +358,7 @@
         <div class="container">
             <h2 class="cooperate__title">С нами соотрудничают</h2>
 
-            <div class="cooperate__slider">
+            <div class="slider">
                 <button type="button" class="slider__btn slider__btn--left">
                     <svg width="10" height="20">
                         <use href="./images/symbol-defs.svg#icon-vector-left"></use>
@@ -410,7 +404,7 @@
 
     <footer class="footer">
         <div class="container footer__wrapper">
-            <div class="">
+            <div>
                 <a href="#" class="logo">
                     <svg class="" width="488" height="39">
                         <use href="./images/symbol-defs.svg#icon-logo"></use>
@@ -453,40 +447,40 @@
             </div>
 
             <ul class="footer__category">
-                <li class="footer-nav">Категории</li>
-                <li class="footer-nav">
+                <li class="footer-nav__item">Категории</li>
+                <li class="footer-nav__item">
                     <a href="" class="footer-nav__link">Пошив</a>
                 </li>
-                <li class="footer-nav">
+                <li class="footer-nav__item">
                     <a href="" class="footer-nav__link">Все товары</a>
                 </li>
-                <li class="footer-nav">
+                <li class="footer-nav__item">
                     <a href="" class="footer-nav__link">Наборы</a>
                 </li>
-                <li class="footer-nav">
+                <li class="footer-nav__item">
                     <a href="" class="footer-nav__link">Производство</a>
                 </li>
             </ul>
 
             <ul class="footer__info">
-                <li class="footer-nav">Информация</li>
-                <li class="footer-nav">
+                <li class="footer-nav__item">Информация</li>
+                <li class="footer-nav__item">
                     <a href="" class="footer-nav__link">О нас</a>
                 </li>
-                <li class="footer-nav">
+                <li class="footer-nav__item">
                     <a href="" class="footer-nav__link">ЧаВо</a>
                 </li>
-                <li class="footer-nav">
+                <li class="footer-nav__item">
                     <a href="" class="footer-nav__link">Контакты</a>
                 </li>
             </ul>
 
-            <form class="footer__form js-speaker-form" name="footer__contact-form" autocomplete="on">
+            <form class="footer-form js-contact-form" name="footer-form" autocomplete="off">
                 <p class="footer-form__title">Связаться с менеджером</p>
                 <p class="footer-form__text">Есть вопрос на который не нашли ответ? Оставьте контакт и наш менеджер
                     свяжеться с вами</p>
-                <span class="form-contact">
-                    <input type="tel" class="form-input" placeholder="Номер телефона" name="user-phone"
+                <span class="footer-form__field">
+                    <input type="tel" class="footer-form__input" placeholder="Номер телефона" name="user-tel"
                         pattern="[0-9]{10}" title="0501234567" required>
                     <button type="submit" class="footer-form__btn">
                         <svg width="11" height="11">

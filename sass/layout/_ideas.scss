@@ -8,9 +8,6 @@
   background-size: 1920px 730px;
   background-repeat: no-repeat;
   overflow: hidden;
-}
-
-.ideas-container {
   position: relative;
 }
 
@@ -31,14 +28,14 @@
   letter-spacing: 0.065em;
 }
 
-.ideas__icons {
+.ideas__picture {
   display: flex;
   position: absolute;
-  right: 0;
-  top: -136px;
+  right: 189px;
+  top: 19px;
 }
 
-.first-rocket {
+.rocket {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -48,25 +45,6 @@
 .icon-lamp {
   margin-right: 94px;
 }
-
-.form__title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.21;
-  margin-top: 93px;
-  width: 556px;
-  margin-bottom: 27px;
-}
-
-.form__wrapper {
-  display: flex;
-  align-items: center;
-}
-
-// .input-wrapper {
-//   background-size: 100% 100%;
-//   background-color: black;
-// }
 
 .ideas:hover .rocket--left {
   transform: translateY(-400px) translateX(-200px);

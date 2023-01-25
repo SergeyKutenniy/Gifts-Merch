@@ -69,13 +69,9 @@
   transform: translateX(260%);
   transition: opacity 500ms ease, transform 1000ms ease;
   opacity: 0;
-}
 
-.creative:hover .creative__photo {
-  transform: translateX(830px);
-  opacity: 1;
-}
-
-.wrapper {
-  display: flex;
+  .creative:hover & {
+    transform: translateX(830px);
+    opacity: 1;
+  }
 }
