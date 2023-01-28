@@ -10,8 +10,7 @@
 }
 
 .cooperate__list {
-  display: flex;
-  align-items: center;
+  @include centered();
   justify-content: center;
 }
 
@@ -24,18 +23,16 @@
 }
 
 .slider {
-  display: flex;
-  align-items: center;
+  @include centered();
   justify-content: center;
 }
 
 .slider__btn {
+  @include centered();
   width: 40px;
   height: 40px;
   background-color: #ece7f0;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
   border: none;
   transition: background-color 250ms ease;

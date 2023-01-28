@@ -61,11 +61,6 @@
   margin: -1px;
 }
 
-.d-flex {
-  display: flex;
-  align-items: center;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -90,6 +85,10 @@ p,
 input {
   margin: 0;
   padding: 0;
+}
+
+input {
+  caret-color: black;
 }
 
 h1 {
@@ -465,8 +464,8 @@ textarea {
 
 .quality__item {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   width: 230px;
   margin-left: 12px;
 }
@@ -527,8 +526,8 @@ textarea {
 
 .popular__head {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .popular__title {
@@ -839,11 +838,11 @@ textarea {
 }
 
 .order__item {
+  display: flex;
+  align-items: center;
   width: 133px;
   height: 133px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
   margin-left: 50px;
   background: linear-gradient(38.95deg, #9796f0 -10.38%, #ffe0e8 107.56%);
@@ -970,12 +969,12 @@ textarea {
 }
 
 .slider__btn {
+  display: flex;
+  align-items: center;
   width: 40px;
   height: 40px;
   background-color: #ece7f0;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
   border: none;
   transition: background-color 250ms ease;
@@ -1102,13 +1101,13 @@ textarea {
 }
 
 .footer-form__btn {
+  display: flex;
+  align-items: center;
   width: 34px;
   height: 34px;
   border-radius: 50%;
   background-color: #524983;
   border: none;
-  display: flex;
-  align-items: center;
   justify-content: center;
   position: absolute;
   top: 10px;

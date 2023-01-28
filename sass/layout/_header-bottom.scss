@@ -1,6 +1,5 @@
 .header-botton {
-  display: flex;
-  align-items: center;
+  @include centered();
   position: inherit;
   z-index: 1;
 }
@@ -11,8 +10,7 @@
 }
 
 .nav {
-  display: flex;
-  align-items: center;
+  @include centered();
 
   font-weight: 600;
   font-size: 18px;

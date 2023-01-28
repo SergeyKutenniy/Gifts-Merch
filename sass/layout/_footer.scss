@@ -34,8 +34,7 @@
 }
 
 .social-icon {
-  display: flex;
-  align-items: center;
+  @include centered();
   margin-top: 30px;
 }
 
@@ -108,13 +107,12 @@
 }
 
 .footer-form__btn {
+  @include centered();
   width: 34px;
   height: 34px;
   border-radius: 50%;
   background-color: #524983;
   border: none;
-  display: flex;
-  align-items: center;
   justify-content: center;
   position: absolute;
   top: 10px;

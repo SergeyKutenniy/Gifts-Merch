@@ -32,9 +32,8 @@
 }
 
 .quality__item {
-  display: flex;
+  @include centered();
   flex-direction: column;
-  align-items: center;
   width: 230px;
   margin-left: 12px;
 

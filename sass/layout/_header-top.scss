@@ -5,8 +5,7 @@
 }
 
 .header-top {
-  display: flex;
-  align-items: center;
+  @include centered();
   padding-top: 44px;
   padding-bottom: 45px;
 }
@@ -45,8 +44,7 @@
 }
 
 .header-top__tel {
-  display: flex;
-  align-items: center;
+  @include centered();
   justify-content: center;
   margin-left: 68px;
 
@@ -83,8 +81,7 @@
 }
 
 .lang {
-  display: flex;
-  align-items: center;
+  @include centered();
   font-weight: 600;
   font-size: 18px;
   margin-left: auto;

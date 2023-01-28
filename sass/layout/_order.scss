@@ -60,22 +60,19 @@
 }
 
 .order__list {
-  display: flex;
-  align-items: center;
+@include centered();
   margin-top: 43px;
 }
 
 .order__examples {
-  display: flex;
-  align-items: center;
+@include centered();
 }
 
 .order__item {
+  @include centered();
   width: 133px;
   height: 133px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
   margin-left: 50px;
   background: linear-gradient(38.95deg, #9796f0 -10.38%, #ffe0e8 107.56%);
@@ -88,8 +85,7 @@
 }
 
 .order__slider {
-  display: flex;
-  align-items: center;
+@include centered();
   margin-left: 30px;
 }
 
