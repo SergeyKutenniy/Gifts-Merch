@@ -11,9 +11,7 @@
 }
 
 .hero__title {
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 60px;
+  @include font(48px, 900, 1.25);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-top: 75px;
@@ -67,9 +65,7 @@
 
 .quality__text {
   margin-top: 9px;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 1.18;
+  @include font(22px, 400, 1.18);
   text-align: center;
 }
 

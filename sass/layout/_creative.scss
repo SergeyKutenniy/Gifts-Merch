@@ -10,9 +10,7 @@
 .creative__title {
   display: flex;
   font-family: 'Pangolin';
-  font-weight: 400;
-  font-size: 70px;
-  line-height: 1.24;
+  @include font(70px, 400, 1.24);
   transform: rotate(-2.35deg);
   margin-left: 195px;
 
@@ -43,16 +41,12 @@
 }
 
 .creative__after-title {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 1.21;
+  @include font(48px, 700, 1.21);
   margin-top: 22px;
 }
 
 .creative__text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.28;
+    @include font(18px, 400, 1.28);
   letter-spacing: 0.065em;
   margin-top: 23px;
   width: 592px;

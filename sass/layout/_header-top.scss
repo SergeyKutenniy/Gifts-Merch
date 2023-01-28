@@ -28,9 +28,7 @@
   outline: none;
 
   &::placeholder {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.06;
+    @include font(16px, 500, 1.06);
     color: #8e8e8e;
   }
 }
@@ -45,12 +43,9 @@
 
 .header-top__tel {
   @include centered();
+  @include font(18px, 600, 1.06);
   justify-content: center;
   margin-left: 68px;
-
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.06;
   color: #eef1f6;
 
   background-color: var(--secondary-accent-color);
@@ -82,14 +77,11 @@
 
 .lang {
   @include centered();
-  font-weight: 600;
-  font-size: 18px;
+  @include font(18px, 600, 1.06);
   margin-left: auto;
 }
 
 .lang--noactive {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.06;
+  @include font(18px, 400, 1.06);
   color: #8e8e8e;
 }

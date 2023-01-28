@@ -21,15 +21,11 @@
 }
 
 .footer__tel {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(16px, 600, 1.19);
 }
 
 .footer__mail {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(16px, 400, 1.19);
   text-decoration-line: underline;
 }
 
@@ -48,8 +44,7 @@
 
 .footer__category {
   margin-left: 171px;
-  font-size: 20px;
-  line-height: 1.8;
+  @include font(20px, 400, 1.8);
 }
 
 .footer-nav__item {
@@ -71,8 +66,7 @@
 
 .footer__info {
   margin-left: 135px;
-  font-size: 20px;
-  line-height: 1.8;
+  @include font(20px, 400, 1.8);
 }
 
 .footer-form {
@@ -81,14 +75,11 @@
 }
 
 .footer-form__title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.8;
+  @include font(20px, 600, 1.8);
 }
 
 .footer-form__text {
-  font-size: 14px;
-  line-height: 1.64;
+  @include font(14px, 400, 1.64);
   color: #8f90a6;
   margin-bottom: 23px;
 }

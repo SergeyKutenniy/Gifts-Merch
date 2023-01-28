@@ -11,10 +11,7 @@
 
 .nav {
   @include centered();
-
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.06;
+  @include font(18px, 600, 1.06);
 }
 
 .nav__item {
@@ -58,9 +55,7 @@
 
 .discount {
   font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 1.23;
+  @include font(48px, 700, 1.23);
   text-transform: lowercase;
   color: var(--main-accent-color);
   margin-left: 50px;
