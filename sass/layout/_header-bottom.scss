@@ -1,7 +1,11 @@
 .header-botton {
-  @include centered();
+  display: none;
   position: inherit;
   z-index: 1;
+
+  @media screen and(min-width:1000px) {
+    @include centered();
+  }
 }
 
 .header-botton--bg {
@@ -62,6 +66,7 @@
 }
 
 .bg-bugs {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
