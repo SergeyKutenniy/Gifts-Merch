@@ -54,10 +54,15 @@
 .active {
   background-color: #272525;
   border-radius: 6px;
-  padding: 7px 13px;
+  padding: 0px 13px;
   font-weight: 700;
   font-size: 16px;
   color: #fafbfd;
+}
+
+.mob-menu__item.active {
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .mob-menu__mail {
