@@ -79,6 +79,7 @@
   @media screen and (min-width: 1920px) {
     width: 710px;
     @include font(48px, 700, 1.23);
+    margin-left: 50px;
   }
 }
 

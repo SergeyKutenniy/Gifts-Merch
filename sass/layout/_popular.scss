@@ -1,14 +1,25 @@
 .popular {
   max-width: 1920px;
   margin: 0 auto;
-  padding-top: 42px;
-  padding-bottom: 130px;
-  background-image: url(/images/popular-bg.png);
-  background-position: center;
-  background-size: 1920px 860px;
-  background-repeat: no-repeat;
+  padding-top: 140px;
+  padding-bottom: 49px;
+  background-color: #eef1f6;
   position: relative;
   z-index: 2;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    padding-top: 40px;
+  }
 }
 
 .popular__head {
@@ -17,6 +28,18 @@
 }
 
 .popular__title {
+  font-size: 24px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    font-size: 48px;
+  }
+}
+
+.popular__title-wrapper {
   display: flex;
   position: relative;
 }
@@ -24,13 +47,33 @@
 .popular__icon-star {
   margin-left: 28px;
   position: absolute;
-  right: 80px;
+  right: 30px;
   top: 0;
+  width: 21px;
+  height: 21px;
+
+  @media screen and (min-width: 480px) {
+    right: 146px;
+  }
+
+  @media screen and (min-width: 768px) {
+    right: 219px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    right: 100px;
+  }
 }
 
 .popular__icon-star--puls {
-  margin-left: 28px;
+  width: 21px;
+  height: 21px;
+  margin-left: 11px;
   animation: puls 1000ms linear infinite;
+
+  @media screen and (min-width: 480px) {
+    margin-left: 18px;
+  }
 }
 
 @keyframes puls {
@@ -45,53 +88,218 @@
 }
 
 .popular__text {
-  margin-top: 1px;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 41px;
   line-height: 1.3;
   letter-spacing: 0.065em;
   text-transform: lowercase;
   color: var(--secondary-text-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-bottom: 30px;
+  }
 }
 
 .popular__products {
+  margin-top: 19px;
   @include centered();
-  @include font(18px, 400, 1.3);
+  justify-content: center;
+  @include font(16px, 400, 1.3);
   letter-spacing: 0.065em;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1000px) {
+    display: flex;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 1920px) {
+    top: 30px;
+  }
 }
 
 .popular__icon-arrow {
   margin-left: 20px;
 }
 
-.popular__grid {
-  display: flex;
-  margin-top: 30px;
+.popular__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 7px;
+  margin-top: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 7px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-top: 14px;
+  }
 }
 
-.popular__grid-2 {
-  position: relative;
-  margin-left: 17px;
+.popular__img-1 {
+  background-image: url(/images/shopers.jpg);
+  width: 100%;
+  height: 210px;
+  margin-top: 0;
+
+  @media screen and (min-width: 480px) {
+    height: 263px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 262px;
+    width: 502px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    height: 347px;
+    width: 662px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    height: 576px;
+    width: 1101px;
+  }
 }
 
-.popular__grid-3 {
+.popular__img-2 {
+  background-image: url(/images/cups.jpg);
+  width: 100%;
+  height: 144px;
+
+  @media screen and (min-width: 480px) {
+    height: 177px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 142px;
+    width: 218px;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 1000px) {
+    height: 187px;
+    width: 288px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    height: 312px;
+    width: 481px;
+  }
+}
+
+.popular__img-3 {
+  background-image: url(/images/thermos.jpg);
+  width: 137px;
+  height: 141px;
+
+  @media screen and (min-width: 480px) {
+    width: 216px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 113px;
+    width: 107px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    height: 149px;
+    width: 141px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    height: 249px;
+    width: 236px;
+  }
+}
+
+.popular__img-4 {
+  background-image: url(/images/black-t-shirt.jpg);
+  width: 137px;
+  height: 141px;
+
+  @media screen and (min-width: 480px) {
+    width: 216px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 113px;
+    width: 107px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    height: 149px;
+    width: 141px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    height: 249px;
+    width: 236px;
+  }
+}
+
+.popular__images-wrapper {
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
-  margin-top: 15px;
-}
-
-.popular img {
-  border-radius: 15px;
 }
 
 .basket {
   position: absolute;
-  top: -35px;
-  right: 0;
+  top: 0px;
+  right: 20px;
   @include centered();
+
+  @media screen and (min-width: 768px) {
+    top: -50px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    top: 115px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    top: 80px;
+  }
+}
+
+.popular__wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .basket__text {
   position: relative;
-  display: inline-flex;
+  display: none;
   top: -14px;
   @include font(14px, 500, 1.06);
   text-decoration-line: underline;
@@ -101,6 +309,10 @@
     0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
   border-radius: 16px;
   margin-right: 24px;
+
+  @media screen and(min-width: 1000px) {
+    display: inline-flex;
+  }
 }
 
 .basket__link {
@@ -157,4 +369,27 @@
   color: #000000;
   margin-top: 6px;
   text-align: center;
+}
+
+.popular__shopper {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.06;
+    margin-top: 5px;
+    margin-left: calc(100% / 4);
+  }
+
+  @media screen and (min-width: 1000px) {
+    margin-left: 30%;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-top: 22px;
+    font-weight: 600;
+    font-size: 24px;
+  }
 }

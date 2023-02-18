@@ -4,24 +4,21 @@
   background-size: 1920px 860px;
   background-repeat: no-repeat;
   position: relative;
+}
 
-  @media screen and (min-width: 1000px) {
-    padding-bottom: 35px;
-  }
-
-  @media screen and (min-width: 1920px) {
-    padding-bottom: 90px;
-  }
+.overlay .container {
+  position: relative;
 }
 
 .hero {
   display: flex;
+  position: relative;
 
   @media screen and(min-width:768px) and (max-width: 999px) {
     padding-bottom: 130px;
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1000px) and (max-width: 1919px) {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -126,22 +123,25 @@
     display: flex;
     margin-top: 28px;
     margin-left: 0;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1920px) {
     margin-top: 58px;
     justify-content: space-between;
+    margin-bottom: 85px;
   }
 }
 
 .quality__768 {
+  background-color: var(--main-bg-color);
   display: none;
 
   @media screen and (min-width: 768px) and (max-width: 999px) {
     @include centered();
     justify-content: center;
-    padding-top: 38px;
-    padding-bottom: 65px;
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 }
 
@@ -247,6 +247,6 @@
 
   @media screen and (min-width: 1920px) {
     width: 785px;
-    right: 240px;
+    right: 102px;
   }
 }
