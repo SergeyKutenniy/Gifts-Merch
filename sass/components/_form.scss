@@ -1,17 +1,31 @@
 .form__title {
-  @include font(24px, 600, 1.21);
-  margin-top: 93px;
-  width: 556px;
-  margin-bottom: 27px;
+  @include font(20px, 600, 1.21);
+  margin-top: 17px;
+  text-align: center;
+
+  @media screen and (min-width: 480px) {
+    margin-top: 7px;
+    font-size: 24px;
+    text-align: start;
+    width: 395px;
+  }
+}
+
+.form__title--minutes {
+  color: var(--secondary-accent-color);
 }
 
 .form__wrapper {
-  @include centered();
+  margin-top: 40px;
+
+  @media screen and (min-width: 480px) {
+    margin-top: 65px;
+  }
 }
 
 .form__field {
   position: relative;
-  margin-left: 74px;
+  margin-top: 34px;
 
   &:first-child {
     margin-left: 0;
@@ -25,6 +39,10 @@
   transform: translateY(-50%);
   color: var(--secondary-text-color);
   transition: transform 250ms ease;
+}
+
+.form__field input[type='text'] {
+  margin-top: 0;
 }
 
 .form__icon {
@@ -43,13 +61,18 @@
   background: transparent;
   border: none;
   border-bottom: 1px solid #272525;
-  width: 336px;
+  width: 98%;
   outline: none;
   padding: 2px 2px 2px 30px;
+  margin-top: 34px;
   color: var(--secondary-accent-color);
 
   &:invalid {
     color: rgb(255, 119, 119);
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 336px;
   }
 }
 
@@ -71,16 +94,21 @@
 
 .form__btn {
   @include font(16px, 500, 1.4);
-  margin-left: 107px;
+  margin-top: 40px;
   border: none;
   color: var(--white-text-color);
   background-color: var(--secondary-accent-color);
   font-family: inherit;
-  padding: 19px 103px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     box-shadow: 0px 6px 25px rgba(121, 129, 173, 0.45);
+  }
+
+  @media screen and (min-width: 480px) {
+    margin-left: 0;
   }
 }

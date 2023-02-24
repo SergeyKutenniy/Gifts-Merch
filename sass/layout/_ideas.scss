@@ -1,45 +1,86 @@
 .ideas {
   max-width: 1920px;
   margin: 0 auto;
-  padding-top: 155px;
-  padding-bottom: 102px;
   background-image: url(/images/ideas-bg.png);
-  background-position: center;
-  background-size: 1920px 730px;
+  background-position: 40% 22%;
+  background-size: 730px 500px;
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
+
+  @media screen and (min-width: 480px) {
+    background-position: 50% 20%;
+    background-size: 820px 740px;
+  }
 }
 
 .ideas__title {
-  @include font(36px, 700, 1.3);
+  margin-top: 16px;
+  @include font(24px, 700, 1.3);
   letter-spacing: 0.04em;
-  width: 556px;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    margin-top: 44px;
+    text-align: start;
+    font-size: 28px;
+  }
 }
 
 .ideas__after-title {
-  margin-top: 17px;
-  width: 556px;
-  @include font(18px, 400, 1.3);
+  @include font(15px, 400, 1.3);
   letter-spacing: 0.065em;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--secondary-text-color);
+
+  @media screen and (min-width: 480px) {
+    margin-top: 16px;
+    text-align: start;
+    font-size: 16px;
+  }
 }
 
 .ideas__picture {
-  display: flex;
-  position: absolute;
-  right: 189px;
-  top: 19px;
-}
-
-.rocket {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-right: 120px;
+  position: relative;
+  text-align: center;
 }
 
 .icon-lamp {
-  margin-right: 94px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 242px;
+  height: 237px;
+}
+
+.rocket--right {
+  position: absolute;
+  width: 36px;
+  height: 57px;
+  bottom: -10px;
+  right: -15px;
+
+  @media screen and (min-width: 480px) {
+    right: 45px;
+    bottom: 9px;
+  }
+}
+
+.rocket--left {
+  position: absolute;
+  bottom: -55px;
+  left: -20px;
+  width: 50px;
+  height: 71px;
+
+  @media screen and (min-width: 480px) {
+    left: 20px;
+    bottom: -34px;
+  }
 }
 
 .ideas:hover .rocket--left {
@@ -50,4 +91,17 @@
 .ideas:hover .rocket--right {
   transform: translateY(-400px) translateX(200px);
   transition: transform 100000ms linear;
+}
+
+.doudle {
+  display: block;
+  width: 103px;
+  height: 49px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+
+  @media screen and (min-width: 480px) {
+    margin-top: 9px;
+  }
 }
