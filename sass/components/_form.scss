@@ -1,18 +1,63 @@
+.js-speaker-form {
+  @media screen and(min-width: 768px) {
+    margin-top: 140px;
+    display: flex;
+  }
+
+  @media screen and (min-width: 1000px) {
+    margin-top: 75px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    display: block;
+    margin-top: 93px;
+  }
+}
+
 .form__title {
   @include font(20px, 600, 1.21);
-  margin-top: 17px;
+  margin-top: 91px;
   text-align: center;
 
   @media screen and (min-width: 480px) {
-    margin-top: 7px;
+    margin-top: 65px;
     font-size: 24px;
     text-align: start;
     width: 395px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 123%;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: 53%;
+  }
+
+  @media screen and (min-width: 1920px) {
+    width: 518px;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .form__title--minutes {
   color: var(--secondary-accent-color);
+
+  @media screen and (min-width: 1920px) {
+    display: none;
+  }
+}
+
+.form__title--hour {
+  display: none;
+
+  @media screen and (min-width: 1920px) {
+    display: inline;
+  }
 }
 
 .form__wrapper {
@@ -20,6 +65,17 @@
 
   @media screen and (min-width: 480px) {
     margin-top: 65px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+    margin-left: 88px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-left: 0;
+    @include centered();
+    margin-top: 24px;
   }
 }
 
@@ -29,6 +85,11 @@
 
   &:first-child {
     margin-left: 0;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-left: 74px;
+    margin-top: 0;
   }
 }
 
@@ -74,6 +135,10 @@
   @media screen and (min-width: 480px) {
     width: 336px;
   }
+
+  @media screen and (min-width: 1920px) {
+    margin-top: 0;
+  }
 }
 
 .form__input:focus-within:not(:placeholder-shown):valid + .form-label {
@@ -110,5 +175,14 @@
 
   @media screen and (min-width: 480px) {
     margin-left: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 280px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-top: 0;
+    margin-left: 107px;
   }
 }

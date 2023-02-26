@@ -2,15 +2,31 @@
   max-width: 1920px;
   margin: 0 auto;
   background-image: url(/images/ideas-bg.png);
-  background-position: 40% 22%;
-  background-size: 730px 500px;
+  background-position: 40% 20%;
+  background-size: 730px 510px;
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
 
   @media screen and (min-width: 480px) {
     background-position: 50% 20%;
-    background-size: 820px 740px;
+    background-size: 170% 740px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-position: 20% 27%;
+    background-size: 400% 129%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    background-position: 24% 28%;
+    background-size: 184% 128%;
+  }
+
+  @media screen and (min-width: 1920px) {
+    background-position: 50% 25%;
+    background-size: 138% 123%;
+    padding-bottom: 102px;
   }
 }
 
@@ -28,6 +44,21 @@
     text-align: start;
     font-size: 28px;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 118px;
+    width: 450px;
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 1000px) {
+    font-size: 36px;
+    width: 560px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-top: 155px;
+  }
 }
 
 .ideas__after-title {
@@ -42,6 +73,15 @@
     text-align: start;
     font-size: 16px;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    font-size: 18px;
+    width: 560px;
+  }
 }
 
 .ideas__picture {
@@ -55,6 +95,21 @@
   margin-right: auto;
   width: 242px;
   height: 237px;
+
+  @media screen and(min-width: 768px) {
+    width: 342px;
+    height: 337px;
+    position: absolute;
+    right: -70px;
+    top: -120px;
+  }
+
+  @media screen and(min-width: 1920px) {
+    width: 431px;
+    height: 421px;
+    right: 300px;
+    top: -140px;
+  }
 }
 
 .rocket--right {
@@ -67,6 +122,27 @@
   @media screen and (min-width: 480px) {
     right: 45px;
     bottom: 9px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 43px;
+    height: 68px;
+    right: 325px;
+    bottom: -235px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: 57px;
+    height: 91px;
+    right: 315px;
+    bottom: -170px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    width: 89px;
+    height: 143px;
+    right: 50%;
+    bottom: -250px;
   }
 }
 
@@ -81,27 +157,74 @@
     left: 20px;
     bottom: -34px;
   }
+
+  @media screen and (min-width: 768px) {
+    left: 0;
+    bottom: -530px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: 82px;
+    height: 113px;
+    left: auto;
+    right: 38px;
+    bottom: -460px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    width: 126px;
+    height: 178px;
+    bottom: -60px;
+  }
 }
 
-.ideas:hover .rocket--left {
+.ideas:hover .rocket--right {
   transform: translateY(-400px) translateX(-200px);
   transition: transform 60000ms linear;
 }
 
-.ideas:hover .rocket--right {
+.ideas:hover .rocket--left {
   transform: translateY(-400px) translateX(200px);
   transition: transform 100000ms linear;
 }
 
 .doudle {
   display: block;
+  position: absolute;
   width: 103px;
   height: 49px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -125%;
+
+  @media screen and (max-width: 320px) {
+    display: none;
+  }
 
   @media screen and (min-width: 480px) {
-    margin-top: 9px;
+    bottom: -107%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 42px;
+    height: 20px;
+    left: 55%;
+    top: 255px;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: 57px;
+    height: 27px;
+    left: 66%;
+    top: 200px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    width: 87px;
+    height: 41px;
+    left: 50%;
+    top: 285px;
   }
 }
