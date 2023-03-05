@@ -2,30 +2,30 @@
   max-width: 1920px;
   margin: 0 auto;
   background-image: url(/images/ideas-bg.png);
-  background-position: 40% 20%;
-  background-size: 730px 510px;
+  background-position: 40% 23%;
+  background-size: 200% 44%;
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
 
   @media screen and (min-width: 480px) {
     background-position: 50% 20%;
-    background-size: 170% 740px;
+    background-size: 170% 66%;
   }
 
   @media screen and (min-width: 768px) {
     background-position: 20% 27%;
-    background-size: 400% 129%;
+    background-size: 400% 100%;
   }
 
   @media screen and (min-width: 1000px) {
     background-position: 24% 28%;
-    background-size: 184% 128%;
+    background-size: 200% 100%;
   }
 
   @media screen and (min-width: 1920px) {
     background-position: 50% 25%;
-    background-size: 138% 123%;
+    background-size: 117% 100%;
     padding-bottom: 102px;
   }
 }
@@ -196,10 +196,6 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -125%;
-
-  @media screen and (max-width: 320px) {
-    display: none;
-  }
 
   @media screen and (min-width: 480px) {
     bottom: -107%;

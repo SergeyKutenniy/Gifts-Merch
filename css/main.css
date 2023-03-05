@@ -2413,8 +2413,8 @@ textarea {
   max-width: 1920px;
   margin: 0 auto;
   background-image: url(/images/ideas-bg.png);
-  background-position: 40% 20%;
-  background-size: 730px 510px;
+  background-position: 40% 23%;
+  background-size: 200% 44%;
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
@@ -2423,28 +2423,28 @@ textarea {
 @media screen and (min-width: 480px) {
   .ideas {
     background-position: 50% 20%;
-    background-size: 170% 740px;
+    background-size: 170% 66%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ideas {
     background-position: 20% 27%;
-    background-size: 400% 129%;
+    background-size: 400% 100%;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .ideas {
     background-position: 24% 28%;
-    background-size: 184% 128%;
+    background-size: 200% 100%;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .ideas {
     background-position: 50% 25%;
-    background-size: 138% 123%;
+    background-size: 117% 100%;
     padding-bottom: 102px;
   }
 }
@@ -2655,12 +2655,6 @@ textarea {
   bottom: -125%;
 }
 
-@media screen and (max-width: 320px) {
-  .doudle {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .doudle {
     bottom: -107%;
@@ -2769,30 +2763,36 @@ textarea {
 }
 
 .cooperate__item {
-  margin-bottom: 36px;
+  margin-top: 36px;
+}
+
+.cooperate__item:first-child {
+  margin-top: 0;
+  margin-left: 0;
 }
 
 @media screen and (min-width: 480px) {
   .cooperate__item {
-    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .cooperate__item {
-    margin-right: 115px;
+  .cooperate__item:nth-child(2) {
+    margin-left: 112px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cooperate__item:nth-child(3) {
+    margin-left: 112px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .cooperate__item {
-    margin-right: 120px;
+    margin-left: 120px;
   }
-}
-
-.cooperate__item:last-child {
-  margin-bottom: 0;
-  margin-right: 0;
 }
 
 .logo__nike {
