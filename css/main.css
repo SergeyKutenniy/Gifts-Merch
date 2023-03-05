@@ -2697,34 +2697,201 @@ textarea {
 }
 
 .cooperate {
-  max-width: 1920px;
   margin: 0 auto;
-  padding-top: 103px;
-  padding-bottom: 132px;
+  padding-top: 88px;
+  padding-bottom: 9px;
+  max-width: 1920px;
+}
+
+@media screen and (min-width: 480px) {
+  .cooperate {
+    padding-top: 78px;
+    padding-bottom: 69px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cooperate {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cooperate {
+    padding-top: 78px;
+    padding-bottom: 69px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .cooperate {
+    padding-top: 103px;
+    padding-bottom: 132px;
+  }
 }
 
 .cooperate__title {
-  margin-bottom: 72px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.21;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .cooperate__title {
+    font-size: 28px;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cooperate__title {
+    font-size: 48px;
+  }
 }
 
 .cooperate__list {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  margin-top: 37px;
+  margin-bottom: 47px;
+}
+
+@media screen and (min-width: 480px) {
+  .cooperate__list {
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-between;
+  }
 }
 
 .cooperate__item {
-  margin-left: 120px;
+  margin-bottom: 36px;
 }
 
-.cooperate__item:first-child {
-  margin-left: 0;
+@media screen and (min-width: 480px) {
+  .cooperate__item {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cooperate__item {
+    margin-right: 115px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .cooperate__item {
+    margin-right: 120px;
+  }
+}
+
+.cooperate__item:last-child {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.logo__nike {
+  width: 111px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo__nike {
+    width: 175px;
+  }
+}
+
+.logo__cola {
+  width: 127px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo__cola {
+    width: 200px;
+  }
+}
+
+.logo__weekend {
+  width: 141px;
+}
+
+@media screen and (min-width: 480px) {
+  .logo__weekend {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .logo__weekend {
+    display: block;
+  }
+}
+
+.logo__megogo {
+  width: 176px;
+}
+
+@media screen and (min-width: 480px) {
+  .logo__megogo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .logo__megogo {
+    display: block;
+  }
+}
+
+.logo__crazybox {
+  width: 140px;
+}
+
+@media screen and (min-width: 480px) {
+  .logo__crazybox {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .logo__crazybox {
+    width: 255px;
+    display: block;
+  }
 }
 
 .slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 21px;
+}
+
+@media screen and (min-width: 480px) {
+  .slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
+    margin-top: 92px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .slider {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .slider {
+    margin-top: 78px;
+  }
 }
 
 .slider__btn {
@@ -2737,18 +2904,20 @@ textarea {
   justify-content: center;
   border: none;
   transition: background-color 250ms ease;
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(90deg);
 }
 
 .slider__btn:hover, .slider__btn:focus {
   background-color: #dadafd;
 }
 
-.slider__btn--left {
-  margin-right: 45px;
-}
-
-.slider__btn--right {
-  margin-left: 45px;
+@media screen and (min-width: 480px) {
+  .slider__btn {
+    transform: rotate(0);
+    margin: 0;
+  }
 }
 
 .footer {
