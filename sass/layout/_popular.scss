@@ -6,18 +6,18 @@
   position: relative;
   z-index: 2;
   background-image: url(/images/popular-bg.png);
-  background-size: 200% 87%;
+  background-size: 200% 110%;
   background-repeat: no-repeat;
   background-position: bottom;
 
   @media screen and (min-width: 480px) {
-    background-size: 135% 96%;
+    background-size: 135% 110%;
   }
 
   @media screen and (min-width: 768px) {
     padding-top: 70px;
     padding-bottom: 40px;
-    background-size: 100% 97%;
+    background-size: 100% 110%;
   }
 
   @media screen and (min-width: 1000px) {
@@ -27,7 +27,7 @@
 
   @media screen and (min-width: 1920px) {
     padding-top: 40px;
-    background-size: 100% 100%;
+    background-size: 100% 110%;
   }
 }
 

@@ -26,7 +26,7 @@
             <div class="container">
                 <div class="header-top">
                     <a href="#" class="">
-                        <svg class="logo">
+                        <svg class="header__logo">
                             <use href="./images/symbol-defs.svg#icon-logo"></use>
                         </svg>
                     </a>
@@ -531,16 +531,50 @@
 
     <!--------------------- FOOTER---------------------- -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer__wrapper">
             <div>
-                <a href="#" class="logo">
-                    <svg class="" width="488" height="39">
+                <a href="#" class="">
+                    <svg class="footer__logo">
                         <use href="./images/symbol-defs.svg#icon-logo"></use>
                     </svg>
                 </a>
                 <p class="footer__title">Свежее дыхание в корпоративной жизни <br>и жизни корпоративной дыхание свежее
                 </p>
+            </div>
+
+            <div class="footer__nav">
+                <ul class="footer__category">
+                    <li class="footer-nav__item">Категории</li>
+                    <li class="footer-nav__item">
+                        <a href="" class="footer-nav__link">Пошив</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="" class="footer-nav__link">Все товары</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="" class="footer-nav__link">Наборы</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="" class="footer-nav__link">Производство</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__info">
+                    <li class="footer-nav__item">Информация</li>
+                    <li class="footer-nav__item">
+                        <a href="" class="footer-nav__link">О нас</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="" class="footer-nav__link">ЧаВо</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="" class="footer-nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__contacts">
                 <ul>
                     <li>
                         <a href="tel:+380630130103" class="footer__tel">+380 630 130 103</a>
@@ -550,24 +584,24 @@
                     </li>
                 </ul>
 
-                <ul class="social-icon">
-                    <li class="social-icon__item">
+                <ul class="footer__social">
+                    <li class="social__item">
                         <a href="">
-                            <svg width="24" height="24">
+                            <svg class="social__icon">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-icon__item">
+                    <li class="social__item">
                         <a href="">
-                            <svg width="24" height="24">
+                            <svg class="social__icon">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-icon__item">
+                    <li class="social__item">
                         <a href="">
-                            <svg width="24" height="24">
+                            <svg class="social__icon">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -575,38 +609,9 @@
                 </ul>
             </div>
 
-            <ul class="footer__category">
-                <li class="footer-nav__item">Категории</li>
-                <li class="footer-nav__item">
-                    <a href="" class="footer-nav__link">Пошив</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="" class="footer-nav__link">Все товары</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="" class="footer-nav__link">Наборы</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="" class="footer-nav__link">Производство</a>
-                </li>
-            </ul>
-
-            <ul class="footer__info">
-                <li class="footer-nav__item">Информация</li>
-                <li class="footer-nav__item">
-                    <a href="" class="footer-nav__link">О нас</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="" class="footer-nav__link">ЧаВо</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="" class="footer-nav__link">Контакты</a>
-                </li>
-            </ul>
-
             <form class="footer-form js-contact-form" name="footer-form" autocomplete="off">
                 <p class="footer-form__title">Связаться с менеджером</p>
-                <p class="footer-form__text">Есть вопрос на который не нашли ответ? Оставьте контакт и наш менеджер
+                <p class="footer-form__text">Есть вопрос на который не нашли ответ? <br>Оставьте контакт и наш менеджер
                     свяжеться с вами</p>
                 <span class="footer-form__field">
                     <input type="tel" class="footer-form__input" placeholder="Номер телефона" name="user-tel"
@@ -619,7 +624,10 @@
                 </span>
             </form>
         </div>
-    </footer> -->
+        <p class="footer__policy">© 2022. All rights reserved.
+            <a class="policy" href="">Политика конфиденциальности</a>
+        </p>
+    </footer>
 
     <!-- <script src="./js/modal.js"></script> -->
     <script src="./js/console.js"></script>
